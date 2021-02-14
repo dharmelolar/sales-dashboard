@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
     <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
@@ -47,29 +48,169 @@
             <button>+Add Menus</button>
         </div>
     </div>
-    <div class="header">
-    <div class="header_navbar">
-        <div class="search">
-            <input type="search" placeholder="search here" id="search">
-            <i class="lni lni-search-alt"></i>
-        </div>
-        <div class="nav">
-            <ol>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Tools</a></li>
-                <li><a href="#">Help</a></li>
-            </ol>
-        </div>
-        <div class="nav-icons">
-            <img src="img/notification.svg" alt="">
-            <img src="img/chat.svg" alt="">
-            <img src="img/promos.svg" alt="">
-            <img src="img/setting.svg" alt="">
-        </div>
-        <img src="img/profile.svg" alt="">
-    </div>
-    </div>
+    <div class="split">
+        <div class="header">
+            <div class="header_navbar">
+                <div class="search">
+                    <input type="search" placeholder="search here" id="search">
+                    <i class="lni lni-search-alt"></i>
+                </div>
+                <div class="nav">
+                    <ol>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Tools</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ol>
+                </div>
+                <div class="nav-icons">
+                    <img src="img/notification.svg" alt="">
+                    <img src="img/chat.svg" alt="">
+                    <img src="img/promos.svg" alt="">
+                    <img src="img/setting.svg" alt="">
+                </div>
+                <img src="img/profile.svg" alt="">
+            </div>
+            </div>
+            <div class="main-body">
+                <div class="dash">
+                    <div>
+                        <h2>Dashboard</h2>
+                        <p>Welcome to Davur Admin</p>
+                    </div>
+                    <div class="filter">
+                        <p>filter period</p>
+                        <input type="date" name="" id="date">
+                    </div>
+                </div>
+                <div class="first-cards">
+                    <div class="card card1">
+                        <span class="card-icon"><img src="img/Layer 2.svg" alt=""></span>
+                        <div class="card-content">
+                            <h2>56</h2>
+                            <p>Total menus</p>
+                            <p>4%(30 days)</p>
+                        </div>
+                    </div>
+                    <div class="card card2">
+                        <span class="card-icon"><img src="img/$.svg" alt=""></span>
+                        <div class="card-content">
+                            <h2>126k</h2>
+                            <p>Total Revenue</p>
+                            <p>26%(30 days)</p>
+                        </div>
+                    </div>
+                    <div class="card card3">
+                        <span class="card-icon"><img src="img/activity 1.svg" alt=""></span>
+                        <div class="card-content">
+                            <h2>279</h2>
+                            <p>Total Orders</p>
+                            <p>4%(30 days)</p>
+                        </div>
+                    </div>
+                    <div class="card card4">
+                        <span class="card-icon"><img src="img/ic_customer1.svg" alt=""></span>
+                        <div class="card-content">
+                            <h2>65</h2>
+                            <p>Total Customers</p>
+                            <p>4%(30 days)</p>
+                        </div>
+                    </div>
+                </div>
 
-    
+                <div class="middle-chart">
+                    <div class="left-chart">
+                        <div class="chart-head">
+                            <span>
+                            <h4>Orders Summary</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </span>
+                        <ol class='list'>
+                            <li>Monthly</li>
+                            <li>Weekly</li>
+                            <li>Today</li>
+                        </ol>
+                        </div>
+                        <div class="new-order">
+                            <div class="new-order-tab">
+                                <button>25</button>
+                                <p>New Orders</p>
+                            </div>
+                            <span class="manage">
+                                <p>Manage orders</p>
+                                <i class="lni lni-angle-double-right"></i>
+                            </span>
+                        </div>
+                        <div class="small-cards">
+                            <div>
+                                <h3>25</h3>
+                                <p>On Delivery</p>
+                            </div>
+                            <div>
+                                <h3>60</h3>
+                                <p>Delivered</p>
+                            </div>
+                            <div>
+                                <h3>7</h3>
+                                <p>Cancelled</p>
+                            </div>
+                        </div>
+
+                        <div class="donut-chart">
+                            <img src="img/pieCharts.svg" alt="">
+                            
+                        </div>
+                    </div>
+
+                    <div class="right-chart">
+                        <div class="chart-head">
+                            <span>
+                            <h4>Orders Summary</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </span>
+                            <select name="" id="">
+                                <option value="">Monthly</option>
+                                <option value="">Weekly</option>
+                                <option value="">Today</option>
+                            </select>
+                        </div>
+                        <div class="line-chart">
+                            <canvas id="line-chart"></canvas>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="chart">
+                    <div class="upper-chart">
+                    <div class="chart-head">
+                        <span>
+                        <h4>Customer map</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </span>
+                    <ol class='list'>
+                        <li>Monthly</li>
+                        <li>Weekly</li>
+                        <li>Today</li>
+                    </ol>
+                    </div>
+                    <div class="chart-div" style=" height:15rem;">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    </div>
+                    <div class="manage-dash">
+                        <span class="left">
+                            <img src="img/Group.svg" alt="">
+                           <h5>Manage <br>Dashboard Layout</h5>
+                        <p>Lorem ipsum dolor sit amet <br> consectetur.</p>
+                        </span>
+                        <span class="right"><i class="lni lni-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+      </div> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script> 
+      <script src="app.js"></script>
 </body>
 </html>
