@@ -16,7 +16,7 @@ body{
     width: 20vw;
     background-color: #fff;
     border-right: 1px solid #969BA0;
-    height: 100vh;
+    /* height: 100vh; */
     margin: 0rem 1rem;
 }
 .side_nav ul li{
@@ -231,7 +231,9 @@ div.new-order{
     border: none;
    
 }
-
+.donut-chart img{
+    width: 80%;
+}
 div.small-cards{
     display: grid;
     grid-template: 1fr/repeat(3,1fr);
