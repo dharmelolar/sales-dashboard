@@ -234,6 +234,9 @@ div.new-order{
 .donut-chart img{
     width: 60%;
 }
+p,li{
+    font-size: 12px;
+}
 div.small-cards{
     display: grid;
     grid-template: 1fr/repeat(3,1fr);
