@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+body{
+    box-sizing: inherit;
+    background-color: #F9F9F9;
+    margin-left: 0;
+    display: flex;
+}
+
+.side_nav{
+    width: 20vw;
+    background-color: #fff;
+    border-right: 1px solid #969BA0;
+    height: 100vh;
+    margin: 0rem 1rem;
+}
+.side_nav ul li{
+    list-style-type: none;
+    margin: 1.5rem 0em; 
+    
+}
+.side_nav li a{
+    text-decoration: none;
+    color: #969BA0;
+    margin-left: 1rem;
+}
+li a:hover{
+    color: #2F4CDD;
+}
+.side_nav  ul li:hover{
+    background-color:#E7EEFF ;
+    border-left: 3px solid #2F4CDD;
+    padding: 1rem 0rem;
+    margin: 0rem 0 0 -1rem;
+}
+.dropdown{
+    height: auto;
+}
+ul li p {
+    /* visibility: hidden; */
+    display: none;
+    /* position: absolute; */
+    transform: all .5s ease;
+    opacity: 0;
+
+}
+
+ul li:hover > ul,
+  li div p:hover{
+    margin-left: 1rem;
+    opacity: 1;
+    display:block;
+    
+}
+
+
+div .add_menus{
+    width: 15.3rem;
+    height: 11.8rem;
+    border-radius:26px ;
+    background:linear-gradient(198deg,#2F4CDD,#D45BFF) ;
+    margin-top: 5rem;
+    text-align: center;
+}
+.menu-img{
+    margin-top: -3rem;
+    margin-bottom: 1rem;
+}
+.add_menus button{
+    width: 12.3rem;
+    height: 3.8rem;
+    border-radius: 8px;
+    border: none;
+    margin-top: .5rem;
+}
+.header_navbar{
+  display: flex;
+  background-color: #fff;
+  margin-left: -1rem;
+  width: 80vw;
+  align-items: center;
+
+}
+
+#search{
+    width: 30rem;
+    height: 3rem;
+    border-radius: 8px;
+    border: 1px solid #EBEBEB;
+    text-indent: 1rem;
+     margin-left: .2rem;
+}
+.lni-search-alt{
+    position: relative;
+    left: -2rem;
+}
+ol li a{
+    text-decoration: none;
+}
+
+ol li{
+    list-style-type: none;
+    display: inline;
+    margin: 0rem 1rem;
+}
