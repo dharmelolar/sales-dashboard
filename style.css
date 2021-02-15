@@ -10,7 +10,13 @@ body{
     margin-left: 0;
     font-family: 'Poppins', sans-serif;
 }
-
+.logo-div{
+    display: flex;
+    align-items: center;
+}
+.lni-menu{
+    margin-left: 1rem;
+}
 
 .side_nav{
     width: 20%;
