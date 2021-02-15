@@ -1,21 +1,13 @@
-// let chart = document.getElementById('myChart').getContext('2d');
 
-// let barChart = new chart(chart, {
-//     type: 'bar',
-//     data:{
-//         labels:[20,40,60],
-//         datasets:[{
-//             label:'# of revenue',
-//             data:[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30],
-//             backgroundColor:['#2F4CDD']
-//         }]
-//     }
-// })
-var ctx = document.getElementById('myChart');
+let ctx = document.getElementById('myChart');
 let lineChart = document.getElementById('line-chart');
+let menu = document.querySelector('.lni-menu')
+let sideNav = document.querySelector('.side_nav')
 
 
-var myChart = new Chart(ctx, {
+
+
+let myChart = new Chart(ctx, {
     type: 'bar',
     data: {
         labels:[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30],
@@ -68,5 +60,11 @@ let salesChart= new Chart(lineChart, {
         }
     }
 });
+
+
+menu.addEventListener(click,()=>{
+    sideNav.classList.toggle('.toggle')
+})
+
 
 

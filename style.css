@@ -8,9 +8,9 @@ body{
     box-sizing: inherit;
     background-color: #F9F9F9;
     margin-left: 0;
-    display: flex;
     font-family: 'Poppins', sans-serif;
 }
+
 
 .side_nav{
     width: 20%;
@@ -18,6 +18,7 @@ body{
     border-right: 1px solid #969BA0;
     /* height: 100vh; */
     margin: 0rem 1rem;
+    padding: 0 1rem;
 }
 .side_nav ul li{
     list-style-type: none;
@@ -41,6 +42,7 @@ li a:hover{
 .dropdown{
     height: auto;
 }
+
 ul li p {
     /* visibility: hidden; */
     display: none;
@@ -78,13 +80,18 @@ div .add_menus{
     border: none;
     margin-top: .5rem;
 }
-.header_navbar{
+nav{
   display: flex;
   background-color: #fff;
-  margin-left: -.5rem;
+  margin-left: 0rem;
   width: 100%;
   align-items: center;
+  justify-content: space-between;
 
+}
+.header_navbar{
+    display: flex;
+    align-items: center;
 }
 
 #search{
@@ -110,7 +117,6 @@ ol li{
 }
 div.split{
     display: flex;
-    flex-direction: column;
 }
 div.main-body{
     margin: 1rem 1rem;
