@@ -13,7 +13,7 @@ body{
 }
 
 .side_nav{
-    width: 20vw;
+    width: 20%;
     background-color: #fff;
     border-right: 1px solid #969BA0;
     /* height: 100vh; */
@@ -81,8 +81,8 @@ div .add_menus{
 .header_navbar{
   display: flex;
   background-color: #fff;
-  margin-left: -1rem;
-  width: 80vw;
+  margin-left: -.5rem;
+  width: 100%;
   align-items: center;
 
 }
@@ -229,10 +229,16 @@ div.new-order{
     height: 2rem;
     border-radius: 5px;
     border: none;
-   
+   margin-left: .5rem;
+}
+.new-order-tab p{
+    margin: .5rem ;
 }
 .donut-chart img{
     width: 60%;
+}
+.donut-chart{
+    text-align: center;
 }
 p,li{
     font-size: 12px;
@@ -245,5 +251,12 @@ div.small-cards{
 }
 .small-cards div{
     border: 1px solid #F2F2F2;
-    padding: 1rem 0;
+    padding: 1rem 1rem;
+    
+}
+#dropdown{
+    background-color: #E7EEFF;
+    border: none;
+    border-radius: 5px;
+    padding: .5rem;
 }
